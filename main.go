@@ -102,6 +102,14 @@ func convertFile(
 		chromedp.Flag("no-sandbox", true),
 		chromedp.Flag("disable-web-security", true),
 		chromedp.Flag("lang", "en-US,en;q=0.9"),
+		chromedp.Flag("disable-web-security", true),
+		chromedp.Flag("disable-gpu", true),
+		chromedp.Flag("disable-extensions", true),
+		chromedp.Flag("disable-dev-shm-usage", true),
+		chromedp.Flag("disable-setuid-sandbox", true),
+		chromedp.Flag("lang", "en-US,en;q=0.9"),
+		chromedp.Flag("disable-software-rasterizer", true),
+		chromedp.Flag("single-process", true), // Faster for single conversions
 		chromedp.UserDataDir(flag_chrome_user_data_dir),
 	)
 	defer parentContextCancel()
