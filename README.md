@@ -16,4 +16,5 @@
 `$Env:GOOS = "windows"; $Env:GOARCH = "386"; go build`
 
 #### For Linux
+
 `GOOS=linux GOARCH=amd64 go build`
