@@ -1,5 +1,5 @@
 
-# An app to convert Badges HTML to PDF
+# An app to convert HTML to PDF
 
 ## [Build](https://www.digitalocean.com/community/tutorials/how-to-build-go-executables-for-multiple-platforms-on-ubuntu-16-04)
 

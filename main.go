@@ -42,11 +42,11 @@ func main() {
 	*/
 
 	flag_chrome_user_data_dir := flag.String("chrome_user_data_dir", "", "Chrome user data directory.")
-	flag_input_files := flag.String("input_files", "", "HTML file with badge code.") // --input_files='i-1.html,i-2.html,i-3.html'
-	flag_output_files := flag.String("output_files", "", "File to output PDF.")      // --output_files='o-1.pdf,o-2.pdf,o-3.pdf'
+	flag_input_files := flag.String("input_files", "", "File with HTML code.")  // --input_files='i-1.html,i-2.html,i-3.html'
+	flag_output_files := flag.String("output_files", "", "File to output PDF.") // --output_files='o-1.pdf,o-2.pdf,o-3.pdf'
 	flag_chrome := flag.String("chrome", "", "Path to Chrome executable.")
-	flag_widths := flag.String("widths", "", "Badge Width,px.")
-	flag_heights := flag.String("heights", "", "Badge Height,px.")
+	flag_widths := flag.String("widths", "", "PDF Width,px.")
+	flag_heights := flag.String("heights", "", "PDF Height,px.")
 	flag.Parse()
 
 	inputFiles := strings.Split(*flag_input_files, ",")
